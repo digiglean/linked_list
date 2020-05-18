@@ -6,6 +6,7 @@ class Node:
     def __repr__(self):
         return self.data
 
+
 class LinkedList:
     def __init__(self, nodes=None):
         self.head = None
@@ -73,9 +74,6 @@ class LinkedList:
             previous_node = node
         
         raise Exception("That node wasn't found in the list")
-
-
-
 
     def __iter__(self):
         node = self.head
